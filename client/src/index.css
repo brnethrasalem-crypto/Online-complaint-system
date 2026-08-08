@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-page-enter {
+  animation: pageEnter 0.45s ease-out forwards;
+}
+/* ===== Global smooth transitions ===== */
+* {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* ===== Page fade-in on load ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.page-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* ===== Card lift on hover ===== */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(16, 185, 129, 0.25);
+}
+
+/* ===== Button press feedback ===== */
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+/* ===== Subtle glow on focus (inputs) ===== */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+  border-color: rgb(16, 185, 129) !important;
+}
+
+/* ===== Skeleton loading shimmer (optional, for future loading states) ===== */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+/* ===== Global smooth transitions ===== */
+* {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* ===== Page fade-in on load ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.page-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* ===== Card lift on hover ===== */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(16, 185, 129, 0.25);
+}
+
+/* ===== Button press feedback ===== */
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+/* ===== Subtle glow on focus (inputs) ===== */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+  border-color: rgb(16, 185, 129) !important;
+}
+
+/* ===== Skeleton loading shimmer (optional, for future loading states) ===== */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}

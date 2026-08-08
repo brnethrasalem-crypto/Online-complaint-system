@@ -1,0 +1,10 @@
+﻿# Root-level dependencies (concurrently, etc.)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
